@@ -1,0 +1,85 @@
+* {
+	--backgroundTop: #1e1e28;
+	--backgroundBottom: #241c2b;
+	color: #fff;
+	font-size: 16px;
+	font-family: "Poppins", sans-serif;
+	padding: 0;
+	margin: 0;
+}
+body {
+	text-align: center;
+	background: url("../images/bg-stars.svg"), linear-gradient(var(--backgroundTop), var(--backgroundBottom));
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+.container {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
+}
+
+p.title {
+	color: #eee;
+	font-size: 2.5em;
+	padding: 3em 0em;
+	font-weight: 700;
+	letter-spacing: 0.2em;
+}
+
+#clock {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: center;
+	width: 80vw;
+	min-width: 30em;
+	margin: 0 auto;
+}
+
+.clockTimeSection {
+	aspect-ratio: 4/3;
+	width: 20%;
+}
+.clockDigitBox {
+	width: 100%;
+	aspect-ratio: 1/1;
+	border-radius: 1em;
+	background: linear-gradient(
+		180deg,
+		rgba(44, 44, 68, 1) 0%,
+		rgba(44, 44, 68, 1) 49.5%,
+		rgba(0, 0, 0, 1) 50%,
+		rgba(52, 54, 79, 1) 50.5%,
+		rgba(52, 54, 79, 1) 100%
+	);
+	box-shadow: 0em 1em 1em rgba(19, 15, 22, 0.5);
+}
+.clockDigitBox span {
+	text-align: center;
+	vertical-align: center;
+	margin: auto auto; /*  TODO FIX*/
+}
+.clockDigitDesc {
+	font-size: 2em;
+	color: #ddd;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	aspect-ratio: 3;
+	text-align: center;
+}
+#footerHills {
+	position: absolute;
+	overflow: hidden;
+	z-index: -1;
+	bottom: 0;
+	left: 0;
+	width: 100vw;
+	background-size: contain;
+}

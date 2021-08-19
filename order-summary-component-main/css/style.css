@@ -28,6 +28,7 @@
 }
 
 body {
+	margin: 0;
 	width: 100vw;
 	height: 100vh;
 	display: flex;
@@ -36,6 +37,7 @@ body {
 	align-items: center;
 	background: url("../images/pattern-background-desktop.svg"), var(--paleBlue);
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 .card {
