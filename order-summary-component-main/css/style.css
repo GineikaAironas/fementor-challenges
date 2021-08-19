@@ -1,0 +1,125 @@
+* {
+	/* ## Layout
+
+	The designs were created to the following widths:
+	 */
+	--mobile: 375px;
+	--desktop: 1440px;
+
+	/* ## Colors */
+	/* Primary */
+
+	--paleBlue: hsl(225, 100%, 94%);
+	--brightBlue: hsl(245, 75%, 52%);
+
+	/* Neutral */
+	--veryPaleBlue: hsl(225, 100%, 98%);
+	--desaturatedBlue: hsl(224, 23%, 55%);
+	--darkBlue: hsl(223, 47%, 23%);
+
+	/* ## Typography */
+
+	/* ### Body Copy */
+
+	font-size: 16px;
+
+	/* ### Font */
+	font-family: Red Hat Display;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: url("../images/pattern-background-desktop.svg"), var(--paleBlue);
+	background-repeat: no-repeat;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 350px;
+	margin: 0;
+	border-radius: 1em;
+	background-color: #fff;
+	margin-bottom: 5em;
+}
+
+.card .cardImage {
+	width: 100%;
+	background-image: url("../images/illustration-hero.svg");
+	background-size: cover;
+	height: 0;
+	padding: 0; /* reset */
+	padding-bottom: calc(100% * 22 / 45);
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+}
+.cardBody {
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+}
+.card h2 {
+	padding-top: 0.5em;
+	font-size: 1.25em;
+	font-weight: 900;
+}
+
+.card .desc {
+	text-align: center;
+	font-size: 0.9rem;
+	color: #666;
+}
+
+.card .planSelect {
+	background-color: var(--veryPaleBlue);
+	display: flex;
+	justify-content: flex-start;
+	max-width: 100%;
+	border-radius: 10px;
+	padding: 0.75em 1.25em;
+	margin: 1em 0;
+}
+.card .planSelect img {
+	border-radius: 50%;
+	margin-right: 0.5em;
+}
+.card .planSelect .planInfo {
+	display: flex;
+	flex-direction: column;
+}
+
+.card .planSelect .planInfo .planName {
+	font-weight: 500;
+}
+.card .planSelect .planChange {
+	font-size: 0.8rem;
+	font-weight: 700;
+	color: var(--brightBlue);
+	align-self: center;
+	margin-left: auto;
+}
+
+.card .proceedBtn {
+	background-color: var(--brightBlue);
+	color: #fff;
+	border: 1px solid var(--darkBlue);
+	font-weight: 500;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	margin-bottom: 1.5em;
+	box-shadow: 0em 1em 1.2em hsl(245, 75%, 52%, 0.33);
+}
+.card .cancelBtn {
+	background-color: transparent;
+	color: #666;
+	font-weight: 700;
+	font-size: 0.8rem;
+	border: 0;
+	margin-bottom: 1em;
+}
