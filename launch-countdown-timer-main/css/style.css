@@ -36,8 +36,7 @@ p.title {
 	flex-direction: row;
 	justify-content: space-between;
 	text-align: center;
-	width: 80vw;
-	min-width: 30em;
+	width: 750px;
 	margin: 0 auto;
 }
 
@@ -62,7 +61,12 @@ p.title {
 .clockDigitBox span {
 	text-align: center;
 	vertical-align: center;
-	margin: auto auto; /*  TODO FIX*/
+	line-height: 150px;
+	font-weight: 700;
+	font-size: 6em;
+	background: linear-gradient(to top, #f95f85 49%, rgba(0, 0, 0, 1) 50%, #d44f73 51%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 .clockDigitDesc {
 	font-size: 2em;
@@ -80,6 +84,33 @@ p.title {
 	z-index: -1;
 	bottom: 0;
 	left: 0;
+	right: 0;
 	width: 100vw;
 	background-size: contain;
+}
+
+@media only screen and (max-width: 768px) {
+	#clock {
+		width: 550px;
+	}
+	.clockDigitBox span {
+		line-height: 110px;
+		font-size: 4.4em;
+	}
+	.clockDigitDesc {
+		font-size: 1.5em;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#clock {
+		width: 360px;
+	}
+	.clockDigitBox span {
+		line-height: 72px;
+		font-size: 2.9em;
+	}
+	.clockDigitDesc {
+		font-size: 1.2em;
+	}
 }
